@@ -2,4 +2,35 @@
     background: $color-primary;
     grid-row: 1 / -1;
     grid-column: side-start / side-end;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 0;
+
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: 4rem;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        background-color: #fff;
+        content: '';
+        height: 2px;
+        width: 4.5rem;
+        display: block;
+    }
+
+    &:before {
+        transform: translateY(-1.5rem);
+    }
+
+    &:after {
+        transform: translateY(1.3rem);
+    }
 }
